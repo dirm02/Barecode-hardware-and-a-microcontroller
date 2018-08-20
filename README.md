@@ -57,8 +57,12 @@ Having probable inputs for power and ground, I connected 3.3v to the circuit. No
 
 **La derniere étape sera de trouver la sortie TTL.Comme le scanneur est fonctionnel,scanne des codebare au pif mais il te faudra un oscilloscope pour mésurer les signals transmis, toujours en jouant avec les 12 pins. Tout en déterminant la vitesse de transmission. Vous remarquerez que le pin ce trouve tout à droite.**
 
->After scanning a barcode and capturing the output on my oscilloscope, I saw that the duration of the shortest peak was just over 100μs. That translates to a frequency of a little under 10000 bits per second. The closest common baudrate is 9600 baud, so that is likely our TTL baudrate. Now, we have all the information we need to connect the barcode scanner module to a microcontroller, in our case an ESP8266 running NodeMCU.
+![ref](https://user-images.githubusercontent.com/16779064/44365047-43868200-a48e-11e8-8f49-a8a5b9d62f55.PNG)
 
-**
+>The closest common baudrate is 9600 baud, so that is likely our TTL baudrate. Now, we have all the information we need to connect the barcode scanner module to a microcontroller, in our case an ESP8266 running NodeMCU.
+
+**La vittesse de transmission est de 9600 baud sur la connection ssh (putty), connecter avec le microcontrolleur ESP8266, [voir l'image 5], qui fonctionne avec NodeMCU. Un badA@@ de firmware open source:** (https://github.com/dirm02/nodemcu-firmware)
+
+
 
 Microcontrolleur connected to a Barecode Reader; e.g: Youku E1005 
