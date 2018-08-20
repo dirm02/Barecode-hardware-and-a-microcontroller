@@ -24,10 +24,11 @@ Source: The State and Trends of Barcode, RFID, Biometric and Pharmacy Automation
 
 **Achete un codebare de 20$ chez :** (https://www.banggood.com) ou **Dans mon site web:** (https://thediscountcomputer.site)
 
+![barcode](https://user-images.githubusercontent.com/16779064/44360734-61011f00-a481-11e8-9c99-69613566de39.PNG)
 
 The scanner module itself was very compact, which lent itself well to making a convenient device. It had a generic unlabeled MCU, and a 12-pin ribbon cable connector. The vendor told me it supported Code 39 barcodes (true – but it actually supports many more!), and had USB and TTL output. It was time to puzzle the module out!
 
-**Le scanneur est compact, 
+**Le scanneur est compact, il a un MCU general et 12 pin de connection a ribbon  
 
 
 
