@@ -4,9 +4,7 @@
 
 **Bref introduction de la fonctionaliter des codebares electronic, avec leur applications telque: L'automatisation, Les equipements dans les hospitaux et dans d'autre industries pour suivre les mouvements des produits.**
 
-
 ![statbarcod](https://user-images.githubusercontent.com/16779064/44357094-ce5b8280-a476-11e8-8ec8-e3452e80f4a3.PNG)
-
 
 *Medication errors in hospitals are serious and scary: enter the humble barcode to save lives.
 Source: The State and Trends of Barcode, RFID, Biometric and Pharmacy Automation Technologies in US Hospitals*
@@ -16,7 +14,6 @@ Source: The State and Trends of Barcode, RFID, Biometric and Pharmacy Automation
 **Bla Bla Bla** 
 
 >Despite that, we've only used them in exactly one project: a consultant and friend of mine asked me to build a reference database out of his fairly extensive library. I had a tablet with a camera in 2011, and used it to scan the ISBN barcodes to a list. That list was used to get the information needed to automatically enter the reference to a simple database, all I had to do was quickly verify that it was correct.
-
 
 # Comment Construire une base de donné de référence pour tracquer tout les "articles,produits,ect.." de votre choix, Avec un systeme codebare sans casser la tirelire!
 
@@ -32,13 +29,11 @@ Source: The State and Trends of Barcode, RFID, Biometric and Pharmacy Automation
 
 **Il a aussi un port pour une sortie USB et TTL** (https://www.sparkfun.com/tutorials/215) (https://en.wikipedia.org/wiki/Terminal_emulator)
 
-
-
 # Utilisation et connection:
 
 >Logically, some of the 12 pins were going to be power, ground, USB data lines, and TTL serial output. Typically these modules are used to build hand-held barcode scanners, so also require a trigger to be pressed to activate the scanner. The first step was to desolder the connector so I could get access to the pads underneath.
 
-**Pour utiliser l'appareille et le connecter a un microcontrolleur , on vas simplement enlever la connection ribbon du codebare et souder des files de cuivre**
+**Pour connecter l'appareille à un microcontrolleur , on vas simplement enlever la connection ribbon du codebare et souder des files de cuivre**
 
 >The next step was to identify power and ground. Ground was pretty easy since several components were connected to what was clearly a ground plane. The power pin was harder, but there was an IC that looked like a voltage regulator in a SOT-753 package. Given common pinouts, both the enable and the voltage input pins were connected to a single pad.
 
@@ -65,4 +60,19 @@ Having probable inputs for power and ground, I connected 3.3v to the circuit. No
 
 ![oscilloscope](https://user-images.githubusercontent.com/16779064/44365891-9f520a80-a490-11e8-85b3-bed00ef74850.PNG)
 >image n°5
+ 
+# Code et Utilisation
+>Our code will be very simple: Change the UART speed to 9600 baud, and when any data is received concatenate what comes in for the next 150 milliseconds and print it out. Remember to set the baud rate of your development tool (e.g. ESPlorer) to 9600 as well.
+
+ **Le code sera facile: Changer UART speed to 9600 baud, quand n'importe quelle infomation est reçu, il faut attaché toute autre imformation aprés les 150×10^-3 et affiché le resultat , utilisée l outil de developpement putty , c'est mieux :P**
+ 
+ 
+ **Voir le document du code en python**  
+**You will find the code in python in documentation**
+ 
+ 
+ 
+ 
+ 
+ 
  
