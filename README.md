@@ -47,7 +47,7 @@ Having probable inputs for power and ground, I connected 3.3v to the circuit. No
 
 **Enfin on connect 3.3v au circuit, puis il faut cherché le pin "déclancheur" qui active la machine. Pour cela , essaillé de trouver le pin GND en jouant avec les pin qui reste. Et voilå ! Le LED vas s'allumé comme par magie.** 
 
-
+![fullanatomie](https://user-images.githubusercontent.com/16779064/44363233-3c10aa00-a489-11e8-8d47-ed3746211b7d.PNG)
 
 # 
 Microcontrolleur connected to a Barecode Reader; e.g: Youku E1005 
