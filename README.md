@@ -28,7 +28,7 @@ Source: The State and Trends of Barcode, RFID, Biometric and Pharmacy Automation
 
 The scanner module itself was very compact, which lent itself well to making a convenient device. It had a generic unlabeled MCU, and a 12-pin ribbon cable connector. The vendor told me it supported Code 39 barcodes (true – but it actually supports many more!), and had USB and TTL output. It was time to puzzle the module out!
 
-**Le scanneur est compact, il a un MCU general et 12 pin de connection a ribbon  
+**Le scanneur est compact, il a un MCU general et 12 pin de connection a ribbon**  ![download](https://user-images.githubusercontent.com/16779064/44360898-dd93fd80-a481-11e8-819d-482ce3acab25.jpg) 
 
 
 
