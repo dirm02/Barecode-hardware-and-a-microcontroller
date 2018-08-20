@@ -79,7 +79,7 @@ Having probable inputs for power and ground, I connected 3.3v to the circuit. No
  
  **Je cherche a interconnecté cet application a un programme java (ou C# ou C/C++ )**
  
- # Thank you for reading this and don't forget to shop on my ecommerce :** (https://thediscountcomputer.site)
+ # Thank you for reading this and don't forget to shop on my ecommerce :**  (https://thediscountcomputer.site)
  
  
  
