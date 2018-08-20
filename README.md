@@ -76,6 +76,7 @@ Having probable inputs for power and ground, I connected 3.3v to the circuit. No
  **Tout marche a merveille et il y'a moyen de le connecter a une interface IoT(bientot le tut dans mon github). Encore mieux, implementer une encryption(bientot dans mon github)! The sky is the limit :)**
  
  **I am looking for ways to implement this to a java (or C# or C/C++) program of Point-of-sale**
+ 
  **Je cherche a interconnecté cet application a un programme java (ou C# ou C/C++ )**
  
  # Thank you for reading this and don't forget to shop on my ecommerce :** (https://thediscountcomputer.site)
