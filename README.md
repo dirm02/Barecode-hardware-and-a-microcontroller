@@ -66,9 +66,17 @@ Having probable inputs for power and ground, I connected 3.3v to the circuit. No
 
  **Le code sera facile: Changer UART speed to 9600 baud, quand n'importe quelle infomation est reçu, il faut attaché toute autre imformation aprés les 150×10^-3 et affiché le resultat , utilisée l outil de developpement putty , c'est mieux :P**
  
+
+ **Voir le document du code en python**  (https://github.com/dirm02/Tracking-Everything-Everywhere-with-a-barecode-hardware-and-a-microcontroller/blob/master/UART.py)
+**You will find the code in python in documentation** (https://github.com/dirm02/Tracking-Everything-Everywhere-with-a-barecode-hardware-and-a-microcontroller/blob/master/UART.py)
  
- **Voir le document du code en python**  
-**You will find the code in python in documentation**
+ # Conclusion
+> This worked quite nicely and was able to read various types of barcode without issue. It would be very easy to connect this to a server on the Internet, either directly via MQTT, or using an Internet of Things dashboard. It would even be possible to implement encryption and authentication if you needed.
+ **Tout marche a merveille et il y'a moyen de le connecter a une interface IoT(bientot le tut dans mon github). Encore mieux, implementer une encryption(bientot dans mon github)! The sky is the limit :)**
+ 
+ **I am looking for ways to implement this to a java program of Point-of sale**
+ **
+ 
  
  
  
