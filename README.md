@@ -26,7 +26,7 @@ Source: The State and Trends of Barcode, RFID, Biometric and Pharmacy Automation
 
 ![barcode](https://user-images.githubusercontent.com/16779064/44361056-5abf7280-a482-11e8-885e-a464782f4624.PNG)
 
-The scanner module itself was very compact, which lent itself well to making a convenient device. It had a generic unlabeled MCU, and a 12-pin ribbon cable connector. It has USB and TTL output as well.
+>The scanner module itself was very compact, which lent itself well to making a convenient device. It had a generic unlabeled MCU, and a 12-pin ribbon cable connector. It has USB and TTL output as well.
 
 **Le scanneur est compact, il a un MCU general et 12 pin de connection a ribbon**  ![download](https://user-images.githubusercontent.com/16779064/44360898-dd93fd80-a481-11e8-819d-482ce3acab25.jpg) 
 
@@ -36,11 +36,11 @@ The scanner module itself was very compact, which lent itself well to making a c
 
 # Utilisation et connection:
 
-Logically, some of the 12 pins were going to be power, ground, USB data lines, and TTL serial output. Typically these modules are used to build hand-held barcode scanners, so also require a trigger to be pressed to activate the scanner. The first step was to desolder the connector so I could get access to the pads underneath.
+>Logically, some of the 12 pins were going to be power, ground, USB data lines, and TTL serial output. Typically these modules are used to build hand-held barcode scanners, so also require a trigger to be pressed to activate the scanner. The first step was to desolder the connector so I could get access to the pads underneath.
 
 **Pour utiliser l'appareille et le connecter a un microcontrolleur , on vas simplement enlever la connection ribbon du codebare et souder des files de cuivre**
 
-The next step was to identify power and ground. Ground was pretty easy since several components were connected to what was clearly a ground plane. The power pin was harder, but there was an IC that looked like a voltage regulator in a SOT-753 package. Given common pinouts, both the enable and the voltage input pins were connected to a single pad.
+>The next step was to identify power and ground. Ground was pretty easy since several components were connected to what was clearly a ground plane. The power pin was harder, but there was an IC that looked like a voltage regulator in a SOT-753 package. Given common pinouts, both the enable and the voltage input pins were connected to a single pad.
 
 **Ensuite, on identifie la connection VCC et GND, "ce gars a trouvé le VCC parce qu'il y'a un regulateur de courant qui ressemble a un circuit integré a coté du pin! coup de boule je dirais.  :) " 
 > voir image 4 
@@ -51,5 +51,14 @@ Having probable inputs for power and ground, I connected 3.3v to the circuit. No
 
 ![fullanatomie](https://user-images.githubusercontent.com/16779064/44363233-3c10aa00-a489-11e8-8d47-ed3746211b7d.PNG)
 > image n°4
-# 
+
+# Mesure, Interface et Codage 
+>The final step was to find the TTL output. That turned out to be pretty easy now that we could force the device to scan barcodes. We took an arbitrary barcode and scanned it while looking at different pins on my oscilloscope. When we found output, we captured it so we could determine the baud rate later on. The final pinout we found is to the right. The flat cable connector pads were fairly dense, so we soldered wires to components connected to the relevant pads rather than the pads themselves where possible.
+
+**La derniere étape sera de trouver la sortie TTL.Comme le scanneur est fonctionnel,scanne des codebare au pif mais il te faudra un oscilloscope pour mésurer les signals transmis, toujours en jouant avec les 12 pins. Tout en déterminant la vitesse de transmission. Vous remarquerez que le pin ce trouve tout à droite.**
+
+>After scanning a barcode and capturing the output on my oscilloscope, I saw that the duration of the shortest peak was just over 100μs. That translates to a frequency of a little under 10000 bits per second. The closest common baudrate is 9600 baud, so that is likely our TTL baudrate. Now, we have all the information we need to connect the barcode scanner module to a microcontroller, in our case an ESP8266 running NodeMCU.
+
+**
+
 Microcontrolleur connected to a Barecode Reader; e.g: Youku E1005 
