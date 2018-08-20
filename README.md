@@ -64,5 +64,4 @@ Having probable inputs for power and ground, I connected 3.3v to the circuit. No
 **La vittesse de transmission est de 9600 baud sur la connection ssh (putty), connecter avec le microcontrolleur ESP8266, [voir l'image 5], qui fonctionne avec NodeMCU. Un badA@@ de firmware open source:** (https://github.com/dirm02/nodemcu-firmware)
 
 
-
-Microcontrolleur connected to a Barecode Reader; e.g: Youku E1005 
+ 
