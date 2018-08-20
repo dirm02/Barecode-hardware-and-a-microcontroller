@@ -37,11 +37,13 @@ The scanner module itself was very compact, which lent itself well to making a c
 # Utilisation et connection:
 
 Logically, some of the 12 pins were going to be power, ground, USB data lines, and TTL serial output. Typically these modules are used to build hand-held barcode scanners, so also require a trigger to be pressed to activate the scanner. The first step was to desolder the connector so I could get access to the pads underneath.
+
 **Pour utiliser l'appareille et le connecter a un microcontrolleur , on vas simplement enlever la connection ribbon du codebare et souder des files de cuivre**
 
 The next step was to identify power and ground. Ground was pretty easy since several components were connected to what was clearly a ground plane. The power pin was harder, but there was an IC that looked like a voltage regulator in a SOT-753 package. Given common pinouts, both the enable and the voltage input pins were connected to a single pad.
 
-**Ensuite, on identifie la connection VCC et GND, "ce gars a trouvé le VCC parce qu'il y'a un regulateur de courant qui ressemble a un circuit integré a coté du pin! coup de boule je dirais.  :) " > voir image 4 
+**Ensuite, on identifie la connection VCC et GND, "ce gars a trouvé le VCC parce qu'il y'a un regulateur de courant qui ressemble a un circuit integré a coté du pin! coup de boule je dirais.  :) " 
+> voir image 4 
 
 Having probable inputs for power and ground, I connected 3.3v to the circuit. Nothing happened, which is expected as we've yet to find the trigger pin that activates the device. The easiest thing to do was to quickly connect each remaining pad to ground and see if the trigger was of the ‘active-low’ variety. It turned out it was, and the LED of the device turned on to indicate it was ready to scan.
 
