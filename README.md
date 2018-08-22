@@ -1,4 +1,4 @@
-# Tracking-Everything-Everywhere-with-a-barecode-hardware-and-a-microcontroller
+# Barecode-hardware-and-a-microcontroller
 
 > We always considered barcodes to be one of those invisible innovations that profoundly changed the world. What we might recognize as modern barcodes were originally designed as a labor-saving device in the rail and retail industries, but were quickly adopted by factories for automation, hospitals to help prevent medication errors, and a wide variety of other industries to track the movements of goods.
 
